@@ -30,8 +30,8 @@ const AtendimentosExames = () => {
             <table border="1">
                 <thead>
                     <tr>
-                        <th>numero_atendimento</th>
-                        <th>codigo_exame</th>
+                        <th>Número de Atendimento</th>
+                        <th>Exames</th>
                     </tr>
                 </thead>
                 <tbody>

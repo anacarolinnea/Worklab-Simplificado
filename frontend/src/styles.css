@@ -136,14 +136,14 @@ input[type="email"],
 input[type="password"],
 input[type="date"],
 select {
-    width: 100%; /* Garante que o campo ocupe toda a largura disponível */
-    height: 30px; /* Altura fixa menor */
-    padding: 4px 8px; /* Ajuste interno */
-    margin: 5px 0; /* Espaçamento externo */
+    width: 100%; /* Mantém a largura dinâmica */
+    height: 25px; /* Reduz a altura das caixas */
+    padding: 2px 6px; /* Reduz o espaçamento interno */
+    margin: 4px 0; /* Diminui o espaçamento externo */
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px; /* Mantém o texto legível */
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px; /* Arredondamento menor */
+    font-size: 14px; /* Reduz o tamanho da fonte */
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -194,4 +194,23 @@ button:hover {
     .menu-column {
         flex: 1 1 100%;
     }
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 150px;
+    max-width: 250px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }

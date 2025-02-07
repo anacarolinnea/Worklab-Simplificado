@@ -3,7 +3,7 @@ const router = express.Router();
 const pool = require('../../db'); // Conexão com o banco de dados
 
 // ROTA: Gerar relatório de atendimentos com exames
-rrouter.get('/', async (req, res) => {
+router.get('/', async (req, res) => {
     const { data_inicio, data_fim } = req.query;
 
     console.log('📌 Requisição recebida para relatório');
@@ -11,6 +11,7 @@ rrouter.get('/', async (req, res) => {
 
     if (!data_inicio || !data_fim) {
         console.error('❌ ERRO: Datas não fornecidas');
+        console.log('📝 Resultado da consulta:', results);
         return res.status(400).json({ error: 'As datas de início e fim são obrigatórias' });
     }
 

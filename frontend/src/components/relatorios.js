@@ -84,7 +84,6 @@ const Relatorios = () => {
                             <th>Data Atendimento</th>
                             <th>Paciente</th>
                             <th>Exame</th>
-                            <th>Tipo Exame</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -94,7 +93,6 @@ const Relatorios = () => {
                                 <td>{item.data_atendimento}</td>
                                 <td>{item.paciente_nome}</td>
                                 <td>{item.exame_nome}</td>
-                                <td>{item.exame_tipo}</td>
                             </tr>
                         ))}
                     </tbody>

@@ -21,7 +21,7 @@ const Menu = () => {
                 <h3>Atendimento</h3>
                 <Link to="/pacientes">Pacientes</Link>
                 <Link to="/atendimentos">Atendimentos</Link>
-                <Link to="/atendimentos_exames">Atendimentos_Exames</Link>
+                <Link to="/atendimentos_exames">Listagem de Exames</Link>
             </div>
 
             <div className="menu-column">

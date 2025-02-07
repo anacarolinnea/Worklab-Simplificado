@@ -37,7 +37,7 @@ const Atendimentos = () => {
                         <tr key={atendimento.numero_atendimento}>
                             <td>{atendimento.numero_atendimento}</td>
                             <td>{atendimento.paciente_nome}</td>
-                            <td>{atendimento.data_atendimento}</td>
+                            <td>{new Date(atendimento.data_atendimento).toLocaleDateString()}</td>
                             <td>{atendimento.medico_nome} (CRM: {atendimento.medico_crm})</td>
                             <td>{atendimento.descricao_atendimento}</td>
                             <td>{atendimento.status}</td>
